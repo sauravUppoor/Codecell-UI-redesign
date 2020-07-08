@@ -11,21 +11,31 @@ Light Yellow: #fcfe9c
 
 */
 
+:root {
+    --background: #16151a;
+    --white-text: #bcbfc8;
+    --white-hover: #f6f8f7;
+    --grey-borders: #bcbfc821;
+    --dark-cards: #1c1d1f;
+    --light-green: #00ad8a;
+    --light-yellow: #fcfe9c;
+}
+
 /* GLOBAL */
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    transition: 0.2s ease-in;
 }
 
-
 body {
-    background-color: #16151a;
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--background) !important;
+    font-family: 'Roboto', sans-serif !important;
+    min-height: 75rem;
 }
 
 a {
-    transition: 0.2s;
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 1px;
@@ -40,11 +50,60 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 0.2px solid #bcbfc821;
-    backdrop-filter: blur(5px);
+    border-bottom: 0.2px solid var(--grey-borders);
+    backdrop-filter: blur(5px) !important;
     background-color: rgba(22, 21, 26, 0.8);
 }
 
+a:hover {
+    transition-delay: 0.2s;
+    color: var(--white-hover);
+    text-decoration: none !important;
+}
+
+/* Media Query */
+@media (max-width: 767px) {
+    .content-container {
+        padding-top: 10px !important;
+    }
+    .navbar-collapse
+    {
+        background-color: rgba(22, 21, 26, 0.925);
+        text-align: center;
+        padding: 10px;
+    }
+    .sample-img {
+        display: none;
+    }
+    .primary-description {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    .container-1,
+    .container-2 {
+        width: 100% !important;
+    }
+    .button-1,
+    .button-2 {
+        display: block;
+        height: 42px !important;
+    }
+    .grid {
+        display: block !important;
+        justify-content: center !important;
+    }
+    .grid-element {
+        width: 100% !important;
+        height: 180px;
+    }
+    .form-1 {
+        width: 55% !important;
+    }
+}
 
 /* NAVBAR */
 nav {
@@ -52,9 +111,23 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: #16151a;
-    font-size: 14px;
+    border-bottom: 0.2px solid #bcbfc821;
+    backdrop-filter: blur(8px) !important;
+    background-color: rgba(22, 21, 26, 0.514);
+    background-color: transparent;
+    font-size: 12px;
     height: 66px;
+}
+
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between !important;
+    background-color: transparent !important;
+}
+
+.navbar-nav > li {
+    padding: 0px 25px;
 }
 
 .logo {
@@ -65,22 +138,11 @@ nav {
     letter-spacing: 1px;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 60%;
-}
-
-.nav-links a {
-    color: #bcbfc8;
-    justify-content: space-around;
-    font-weight: 400;
-}
-
-a:hover {
-    transition-delay: 0.2s;
-    color: #f6f8f7;
+.nav-link {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .primary {
@@ -89,7 +151,7 @@ a:hover {
 
 .sign-in {
     color: #f6f8f7;
-    background-color: #00ad8a;
+    background-color: var(--light-green);
     padding: 5px 15px;
     font-weight: 700;
     border-radius: 5px;
@@ -98,23 +160,28 @@ a:hover {
 
 /* Buttons */
 
-.btn {
-    padding: 10px 40px;
-    border-radius: 4px;
-    transition: all 0.2s ease-in-out;
+.button-1 {
+    color: #f6f8f7;
+    background-color: var(--light-green);
+    padding: 5px 15px;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
-.btn-primary {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-    background: #00ad8a;
+.button {
+    padding: 7px 35px !important;
+    border-radius: 4px !important;
 }
 
-.btn-secondary {
+.button-2 {
     text-decoration: none;
     color: #fcfe9c;
     background-color: transparent;
     border: 2px solid #fcfe9c;
+}
+
+.button-2:hover {
+    color: var(--white-hover);
 }
 
 .glow-button:hover {
@@ -133,14 +200,15 @@ a:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    font-size: 3rem;
     justify-content: center;
+    font-size: 5rem !important;
+    font-weight: 700;
 }
 
 form {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
-    width: 45%;
+    width: 60%;
     max-width: 80vw;
     background-color: rgba(52,56,68,0.29);
     padding: 10px;
@@ -151,14 +219,18 @@ form {
 .form-1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    height: auto;
+    width: 45%;
 }
 
-
+input {
+    margin-bottom: 20px;
+}
  
 input, textarea{
     background: none;
-    margin: 0px auto;
+    margin: 0px auto !important;
     text-align: center;
     height: 50px;
     border: none;
@@ -179,7 +251,7 @@ button {
     height: 45px;
     border: none;
     outline: none;
-    border-radius: 4px;
+    border-radius: 4px !important;
     font-size: 17px;
     font-weight: 600;
     color: #f6f8f7;
@@ -216,6 +288,24 @@ ion-icon {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    width: 80%;
+}
+
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 90% !important;
+    margin: 0 auto;
 }
 
 .description {
@@ -228,7 +318,8 @@ ion-icon {
 
 .primary-description {
     color: #f6f8f7;
-    font-size: 2rem;
+    font-size: 3rem !important;
+    font-weight: 700;
     margin-bottom: 17px;
 }
 
@@ -239,7 +330,6 @@ ion-icon {
     font-weight: 100;
     line-height: 1.2;
     letter-spacing: 0.5px;
-    padding: 20px 0px;
     margin: 10px 0px;
 }
 

@@ -1,91 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/codecell-logo.png">
     <link href='https://css.gg/code-slash.css' rel='stylesheet'>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
 
     <title>TSEC CodeCell</title>
 </head>
+
 <body>
-    <nav id="nav">
-        <a href="#" class="logo">CodeCell</a>
-        <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Challenges</a></li>
-            <li><a href="#">Ranklist</a></li>
-            <li><a href="#" class="primary">TSEC Hacks</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        <a href="#" class="btn btn-primary glow-button">Sign Up</a>
+    <nav class="navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
+        <a class="navbar-brand mr-auto" href="#">
+            <img src="img/codecell-logo.png" alt="" width="40">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Challenges</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Ranklist</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">TSEC Hacks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <a href="#" class="sign-in glow-button mr-auto">Sign Up</a>
+        </div>
     </nav>
-    
+
     <div class="content-container section-1">
         <div class="container">
             <div class="heading">
-                <h1 style= "color: #f6f8f7;padding: 0px 20px;">TSEC</h1>
-                <h1 style="color: #f6f8f7;padding: 0px 20px;">CodeCell</h1>
+                <span style="color: var(--light-green);padding: 0px 20px;">TSEC</span>
+                <span style="color: var(--light-yellow);padding: 0px 20px;">CodeCell</span>
             </div>
         </div>
         <div class="description secondary-description">
-            <p>Welcome to official website of CodeCell Committee</p>
-            <p>of Thadomal Shahani Engineering College</p>
+            <p>Welcome to official website of TSEC CodeCell</p>
         </div>
         <div class="container">
             <form class="form-1">
                 <input type="email" placeholder="> Never miss an update!">
-                <button id="button glow-button">Join our mailing list</button>
+                <button id="button-1 glow-button">Join our mailing list</button>
             </form>
         </div>
-        
+
     </div>
 
     <div class="content-container img-container">
-        <div class="container">
+        <div class="container-1">
             <div class="description">
                 <div class="primary-description">
-                    <h1>Take your problem</h1>
-                    <h1>solving skills to next level</h1>
+                    <span>Take your problem</span>
+                    <span>solving skills to next level</span>
                 </div>
                 <div class="secondary-description">
-                    <p>Participate in TSEC CodeCell's Weekly Challenges</p>
-                    <p>Do you have what it takes to top the ranklist?</p>
+                    <p>Participate in TSEC CodeCell's Weekly Challenges. Do you have what it takes to top the ranklist?</p>
                 </div>
                 <div class="cta">
                     <div class="cta-primary">
-                        <a href="#" class="btn btn-primary glow-button">Go to Challenges</a>
+                        <a href="#" class="button button-1 glow-button">Go to Challenges</a>
                     </div>
                     <div class="cta-secondary">
-                        <a href="#" class="btn btn-secondary">View Ranklist</a>
+                        <a href="#" class="button button-2">View Ranklist</a>
                     </div>
                 </div>
                 <div class="updates">
-                    
+
                 </div>
             </div>
-            
+
         </div>
         <div class="sample-img">
             <img class="actual-img" src="img/sample-ide.png" alt="Sample Image">
         </div>
     </div>
-    
+
     <div class="content-container-2">
-        <div class="container">
+        <div class="container-2">
             <div class="primary-description">
-                <h1>Competitions for competitors</h1>
+                <span>Competitions for competitors</span>
             </div>
             <div class="secondary-description">
-                <p>TSEC CodeCell organizes coding events along with workshops</p>
-                <p>to not only provide opportunities to budding talents but also leverage new ideas.</p>
+                <p>TSEC CodeCell organizes coding events along with workshops to not only provide opportunities to budding talents but also leverage new ideas</p>
             </div>
         </div>
-        
-        <div class="container grid">
+
+        <div class="container-2 grid">
             <div class="grid-element">
                 <ion-icon name="code-working-outline" size="large"></ion-icon>
                 <div class="grid-primary">TSEC Hacks</div>
@@ -108,23 +129,32 @@
         <div class="container">
             <div class="contact-us">
                 <div class="primary-description">
-                    <h1>Drop us a line</h1>
+                    <span>Drop us a line</span>
                 </div>
                 <div class="secondary-description">
                     <p>Send us your feedbacks, doubts or any bugs that you found.</p>
-                    <p>We value your opinions and feedbacks</p>
                 </div>
                 <form>
-                      <input type="name" placeholder="Enter your name">
-                      <input type="email" placeholder="Enter your email address">
-                      <textarea name="query" placeholder="Enter your query"></textarea>
-                      <br>
-                      <button type="submit">Submit</button>
+                    <input type="name" placeholder="Enter your name"><br>
+                    <input type="email" placeholder="Enter your email address"><br>
+                    <textarea name="query" placeholder="Enter your query"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
     </div>
     <script src="js/index.js"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
