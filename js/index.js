@@ -5,11 +5,10 @@ var sticky = nav.offsetTop;
 
 window.onscroll = () => {
     if(window.pageYOffset > sticky) {
-        nav.classList.add("sticky");
-        nav.classList.remove("transparent");
+        nav.style.borderBottom = "0.2px solid #bcbfc821";
     }
     else {
-        nav.classList.remove("sticky");
+        nav.style.borderBottom = "0px solid #bcbfc821";
     }
 };
 

@@ -9,14 +9,14 @@
     <link rel="shortcut icon" href="img/codecell-logo.png">
     <link href='https://css.gg/code-slash.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 
     <title>TSEC CodeCell</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
         <a class="navbar-brand mr-auto" href="#">
             <img src="img/codecell-logo.png" alt="" width="40">
         </a>
@@ -79,10 +79,10 @@
                 </div>
                 <div class="cta">
                     <div class="cta-primary">
-                        <a href="#" class="button button-1 glow-button">Go to Challenges</a>
+                        <a href="#" class="button-1 glow-button">Go to Challenges</a>
                     </div>
                     <div class="cta-secondary">
-                        <a href="#" class="button button-2">View Ranklist</a>
+                        <a href="#" class="button-2">View Ranklist</a>
                     </div>
                 </div>
                 <div class="updates">
@@ -135,15 +135,41 @@
                     <p>Send us your feedbacks, doubts or any bugs that you found.</p>
                 </div>
                 <form>
-                    <input type="name" placeholder="Enter your name"><br>
-                    <input type="email" placeholder="Enter your email address"><br>
-                    <textarea name="query" placeholder="Enter your query"></textarea>
+                    <input type="name" placeholder="Your name"><br>
+                    <input type="email" placeholder="Your email address"><br>
+                    <textarea name="query" placeholder="Type your message"></textarea>
                     <br>
                     <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footerName">
+                TSEC CodeCell &copy; 2021 All rights reserved.
+            </div>
+            <div class="container mr-auto">
+                <ion-icon class="social" name="logo-instagram" size="large">
+                    <a href="#"></a>
+                </ion-icon>
+                <ion-icon class="social" name="logo-linkedin" size="large">
+                    <a href="#"></a>
+                </ion-icon>
+                <ion-icon class="social" name="logo-github" size="large">
+                    <a href="#"></a>
+                </ion-icon>
+                <ion-icon class="social" name="logo-facebook" size="large">
+                    <a href="#"></a>
+                </ion-icon>
+                <ion-icon class="social" name="logo-youtube" size="large">
+                    <a href="#"></a>
+                </ion-icon>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/index.js"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
