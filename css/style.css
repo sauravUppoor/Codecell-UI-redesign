@@ -32,7 +32,6 @@ Light Yellow: #fcfe9c
 body {
     background-color: var(--background) !important;
     font-family: 'Roboto', sans-serif !important;
-    min-height: 75rem;
 }
 
 a {
@@ -53,6 +52,25 @@ a:hover {
     text-decoration: none !important;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-green); 
+}
 
 
 /* NAVBAR */
@@ -242,10 +260,15 @@ ion-icon {
 .container-2 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     width: 90%;
     margin: 0 auto;
+}
+
+.profile-container-1 {
+    width: 40%;
+    text-align: left;
 }
 
 .description {
@@ -354,7 +377,7 @@ ion-icon {
 
 /* Footer */
 footer {
-    padding: 40px 20px;
+    padding: 40px 0px;
     height: 100px;
 }
 
@@ -379,7 +402,125 @@ footer {
     color: #fff;
 }
 
+/* Profile Page */
 
+.card {
+    background-color: var(--dark-cards) !important;
+    border-radius: 15px !important;
+    width: 35%;
+    min-width: 300px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--light-yellow);
+    color: white;
+    padding: 25px;
+    margin: 10px -20px;
+}
+
+.card-2 {
+    background-color: var(--dark-cards) !important;
+    border-radius: 15px !important;
+    width: 100%;
+    min-width: 300px;
+    height: 350px;
+    display: block;
+    box-shadow: var(--light-yellow);
+    color: white;
+    padding: 25px;
+    margin: 10px auto;
+    
+}
+
+.card-name {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+}
+
+.card-user {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--light-green);
+}
+  
+.card-image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    /* border: 5px solid #272133; */
+    margin-top: 20px;
+    
+}
+
+.card-image:hover {
+    box-shadow: 0 10px 50px rgba(252, 254, 156, 0.842);
+}
+
+.card-extra {
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;   
+}
+
+.profile-scores {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace; 
+    margin: 20px 5px; 
+}
+
+.field-info {
+    font-size: 25px;
+    color: var(--white-hover);
+}
+
+.field-value {
+    font-size: 25px;
+    color: var(--light-green);
+}
+
+.field-head {
+    font-size: 18px;
+    text-align: left;
+    margin: 10px;
+}
+
+.scroll {
+    height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.profile-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2px solid #bcbfc821;
+    margin: 7px;
+    align-items: center;
+}
+
+.profile-problem {
+    display: block;
+    /* text-align: center; */
+}
+
+.profile-problem:hover {
+    /* color: var(--light-yellow); */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile-points {
+    background-color: var(--light-green);
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;  
+}
 
 /* Media Query */
 @media (max-width: 767px) {
@@ -428,6 +569,20 @@ footer {
     .form-1 {
         width: 55%;
     }
+    .profile-container-1 {
+        margin: 0 auto;
+        width: 80%;
+        justify-content: center;
+    }
+    .profile-scores {
+        width: 80%;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .card {
+        margin: 30px auto;
+    }
+
 }
 
 
