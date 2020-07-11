@@ -52,6 +52,10 @@ a:hover {
     text-decoration: none !important;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 5px;
@@ -177,6 +181,37 @@ form {
     width: 45%;
 }
 
+.form-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+    width: 100%;
+    background-color: var(--dark-cards);
+}
+
+.form-3 input {
+    width: 60%;
+    border: 0.2px solid #bcbfc8;
+    border-radius: 5px;
+}
+
+label {
+    display: block !important;
+    float: left;
+    padding-top: 7px;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 0;
+    flex: 1 1 0px;
+    margin: 5px;
+}
+
 input {
     margin-bottom: 20px;
 }
@@ -194,6 +229,16 @@ input, textarea{
 
 textarea {
     margin: 20px 0px;
+}
+
+.custom-select {
+    margin-left: 30px;
+    outline: none;
+    text-align: center;
+}
+
+.custom-select:focus {
+    outline: transparent;
 }
 
 /* BUTTONS */
@@ -234,7 +279,7 @@ ion-icon {
 .content-container-2 {
     width: 100%;
     margin: 0px auto;
-    padding: 90px 0px;
+    padding: 70px 0px;
     max-width: 1024px;
 }
 /* ------------------------------------ */
@@ -452,13 +497,13 @@ footer {
     height: 160px;
     width: 160px;
     border-radius: 50%;
-    /* border: 5px solid #272133; */
     margin-top: 20px;
     
 }
 
 .card-image:hover {
-    box-shadow: 0 10px 50px rgba(252, 254, 156, 0.842);
+    /* box-shadow: 0 10px 50px rgba(252, 254, 156, 0.842); */
+    border: 5px solid var(--light-green);
 }
 
 .card-extra {

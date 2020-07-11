@@ -12,7 +12,19 @@ window.onscroll = () => {
     }
 };
 
-/* Mailing List animation */
+/* Profile Animation */
+
+var goToEdit = document.getElementById("edit-profile");
+var goToProfile = document.getElementById("actual-profile");
+profileEdit = () => {
+    goToEdit.classList.remove("hidden");
+    goToProfile.classList.add("hidden");
+    console.log("1");
+}
+profileUpdate = () => {
+    goToEdit.classList.add("hidden");
+    goToProfile.classList.remove("hidden");
+}
 
 
 
