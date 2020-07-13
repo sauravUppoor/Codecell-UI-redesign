@@ -627,7 +627,7 @@ footer {
 }
 
 .progress-rank {
-    height: 7px;
+    height: 5px;
     margin: 5px;
     border-radius: 5px;
     background-image: linear-gradient(to right,#00ad8a, #00ffcc);
