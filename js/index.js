@@ -26,6 +26,27 @@ profileUpdate = () => {
     goToProfile.classList.remove("hidden");
 }
 
+/* Ranklist points bar */
+
+var table = document.getElementById("table");
+var totalPoints = table.children[0].children[3].textContent.slice(0,-3);
+totalPoints = parseInt(totalPoints);
+
+var children = table.children;
+let array = [...children];
+setW = (item) => {
+    var curPoints = item.children[3].textContent.slice(0,-3);
+    curPoints = parseInt(curPoints);
+
+    var percent = curPoints/totalPoints * 100;
+    item.children[2].children[0].style.maxWidth = percent + "%";
+}
+
+array.forEach(setW);
+
+
+
+
 
 
 

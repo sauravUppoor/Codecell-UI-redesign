@@ -567,6 +567,90 @@ footer {
     font-family: 'Roboto Mono', monospace;  
 }
 
+/* Ranklist */
+
+.ranklist {
+    text-align: center;
+}
+
+.ranklist-table {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--dark-cards);
+    border-radius: 9px;
+    padding: 20px;
+}
+
+.rank-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    border-bottom: 1px solid #bcbfc821;
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+}
+
+.rank-box-1 {
+    flex: 1;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.rank-box-2 {
+    flex: 2;
+    text-align: left;
+    overflow: hidden;
+}
+
+.rank-name {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--white-hover);
+}
+
+.rank-name:hover {
+    color: var(--white-hover);
+    text-decoration-line: underline !important;
+}
+
+.rank-box-3 {
+    flex: 3;
+}
+
+.progress-rank {
+    height: 7px;
+    margin: 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,#00ad8a, #00ffcc);
+    box-shadow: 0px 0px 15px 1px rgba(0,173,138,1);
+}
+
+.you {
+    border: 2px solid var(--light-green);
+    border-radius: 6px;
+}
+
+.pts {
+    color: var(--light-yellow);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rank-branch {
+    font-size: 14px;
+    color: var(--white-text);
+    letter-spacing: 0.8px;
+}
+
 /* Media Query */
 @media (max-width: 767px) {
     .content-container {
@@ -627,7 +711,12 @@ footer {
     .card {
         margin: 30px auto;
     }
-
+    .rank-box-3 {
+        display: none;
+    }
+    .rank-box-2 {
+        flex: 3;
+    }
 }
 
 
