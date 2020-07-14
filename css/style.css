@@ -342,11 +342,9 @@ ion-icon {
 }
 
 .tertiary-description {
-    color: #fcfe9c;
-    font-size: 0.8rem;
+    color: #bcbfc8;
+    font-size: 1rem;
     font-weight: normal;
-    text-transform: uppercase;
-    margin-bottom: 30px;
     letter-spacing: 1px;
 }
 
@@ -651,6 +649,85 @@ footer {
     letter-spacing: 0.8px;
 }
 
+/* Problems Page */
+
+.problem {
+    background-color: var(--dark-cards);
+    border-radius: 6px;
+    padding: 30px;
+    margin: 5px 10px;
+}
+
+.problem-info {
+    margin: 20px auto;
+    width: 30%;
+    align-items: center;
+    border: 0.5px solid var(--light-yellow);
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.problem-score {
+    color: var(--white-text);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.problem-heading {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.statment {
+    font-size: 19px;
+    color: var(--white-text);
+    letter-spacing: 0.7px;
+}
+
+.input-format {
+    font-size: 20px;
+}
+
+.problem-heading {
+    color: var(--light-yellow);
+    margin: 10px;
+    font-size: 20px;
+}
+
+.problem-verdict {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.verdict {
+    color: var(--white-hover);
+}
+
+.ac {
+    font-size: 25px;
+    color: var(--light-green);
+}
+
+.wa {
+    font-size: 25px;
+    color: rgb(207, 64, 64);
+}
+
+.tle,
+.mle {
+    font-size: 25px;
+    color: rgb(218, 171, 86);
+}
+
+.re,
+.ce {
+    font-size: 25px;
+    color: var(--light-yellow);
+}
+
 /* Media Query */
 @media (max-width: 767px) {
     .content-container {
@@ -716,6 +793,16 @@ footer {
     }
     .rank-box-2 {
         flex: 3;
+    }
+    .problem-info {
+        width: 60%;
+    }
+    .problem {
+        margin: 5px 30px;
+    }
+    .problem-heading {
+        margin: 10px;
+        text-align: center;
     }
 }
 

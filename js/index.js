@@ -44,6 +44,8 @@ setW = (item) => {
 
 array.forEach(setW);
 
+/* Editor */
+
 
 
 
