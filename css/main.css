@@ -1,0 +1,351 @@
+main
+{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding-top: 2%;
+    font-family: 'Overpass Mono', monospace !important;
+}
+
+.left-panell
+{
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0.2 !important;
+}
+
+.account-img img
+{
+    height: 28vh;
+    border-radius: 150px;
+    margin-bottom: 10%;
+}
+
+.name
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+.username
+{
+    color: #757575;
+    padding-bottom: 2%;
+}
+
+.year-branch
+{
+    color: #757575;
+    padding-bottom: 10%;
+}
+
+.right-panell
+{
+    flex: 0.8 !important;
+    padding-left: 2%;
+    margin: 2px auto;
+}
+
+.announcement {
+    color: #fcfe9c;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title
+{
+    font-size: 50px;
+}
+
+.challenges
+{
+    padding-top: 5%;
+}
+
+.challenges a
+{
+    text-decoration: underline;
+}
+
+.challenge-type
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.all, .unsolved, .completed
+{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-color: #212121;
+    border-radius: 5px;
+}
+
+.all:hover, .unsolved:hover, .completed:hover
+{
+    background-color: #424242;
+    color: #69f0ae;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.challenges-container-all, .challenges-container-unsolved, .challenges-container-solved
+{
+    padding-top: 5%;
+    animation: slide 0.3s linear;
+    margin: 3px auto !important;
+}
+
+@keyframes slide
+{
+    0%
+    {
+        transform: translateY(5px);
+    }
+
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+.challenge-type-title
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.week
+{
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff3b;
+    border-radius: 5px;
+    padding: 1%;
+    margin-bottom: 30px;
+}
+
+.week-info
+{
+    display: flex;
+    align-items: baseline;
+}
+
+.week-number
+{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+.date-range
+{
+    color: #757575;
+    padding-left: 2%;
+}
+
+table
+{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+}
+
+th
+{
+    color: #69f0ae;
+}
+
+.tr-solved
+{
+    background-color: rgba(105, 240, 174, 0.3); /* RGB of #69f0ae */
+}
+
+.tr-unsolved
+{
+    background-color: rgba(238, 255, 65, 0.4); /* RGB of #eeff41 */
+}
+
+.tr-unattempted
+{
+    background-color: rgba(255, 82, 82, 0.4);
+}
+
+td
+{
+    /* border: 2px solid #000; */
+    border-radius: 5px !important;
+    padding: 0.5%;
+    align-items: center;
+}
+
+.highlight
+{
+    color: #69f0ae;
+    background-color: #424242;
+}
+
+.easy {
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.medium {
+    color: orange;
+    font-weight: bold;
+}
+
+.hard {
+    color: red;
+    font-weight: bold;
+}
+/* Media queries */
+
+@media screen and (max-width: 1295px)
+{
+    main
+    {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    main
+    {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto; 
+    }
+
+    .right-panell
+    {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    main
+    {
+        width: 100%;
+        margin: 0 auto !important;
+        justify-content: center;
+    }
+    .account-img
+    {
+        display: flex;
+        align-items: center;
+    }
+    
+    .account-img img
+    {
+        height: 15vh;
+        border-radius: 80px;
+    }
+
+    .name
+    {
+        font-size: 20px;
+    }
+
+    .challenges {
+        width: 95%;
+    }
+
+    .challenges-problem-name {
+        max-width: 10%;
+    }
+    .username, .year-branch, .stats
+    {
+        font-size: 15px;
+    }
+
+    .right-panell
+    {
+        padding-top: 5%;
+        margin: 0 10px;
+    }
+
+    .title
+    {
+        font-size: 30px;
+    }
+
+    .challenge-type
+    {
+        flex-direction: column;
+    }
+
+    .all, .unsolved, .completed
+    {
+        margin: 2%;
+        padding: 3% 6%;
+    }
+
+    .challenge-type-title
+    {
+        padding-top: 10%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    .week
+    {
+        margin: 25px 5px;
+        padding: 5px;
+    }
+
+    .week-info
+    {   
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .week-number
+    {
+        font-size: 20px;
+        padding: 2%;
+    }
+
+    .date-range
+    {
+        font-size: 10px;
+    }
+
+    .table {
+        border-collapse: separate;
+        border-spacing: 20px 0;
+    }
+
+    .table-limits
+    {
+        width: 80vw;
+        overflow: auto;
+        padding: 10px 0px;
+        margin: 0 auto;
+    }
+
+    tr
+    {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    td
+    {
+        padding: 8px 8px;
+    }
+}

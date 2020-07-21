@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="codecell, tsec, challenges, competitive coding, cc, competitive programming, cp, weekly challenges, wc, harsh kapadia, html, css, js, vanilla css">
+        <meta name="description" content="A static competitive coding weekly challenges page for TSEC CodeCell by Harsh Kapadia">
+        
+        <link rel="shortcut icon" href="img/codecell-logo.png">
+        <link href='https://css.gg/code-slash.css' rel='stylesheet'>
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/base.css">
+        <!-- <link rel="stylesheet" href="./css/navbar.css"> -->
+        <link rel="stylesheet" href="./css/main.css">
+        
+        
+        <link rel="shortcut icon" href="./img/codecell_logo.svg" type="image/x-icon" sizes="any">
+        
+
+        <script defer src="./js/account_dropdown.js"></script>
+        <script defer src="./js/burger_menu_dropdown.js"></script>
+        <script defer src="./js/challenge_type.js"></script>
+
+        <title>TSEC CodeCell</title>
+    </head>
+
+    <body>
+        <!-- <nav class="navbar">
+            <div class="left-side">
+                <div class="burger-menu">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
+
+                <div class="logo">
+                    <a href="#"><img src="./static/img/codecell_logo.svg" alt="TSEC CodeCell"></a>
+                </div>
+    
+                <ul class="navbar-main-ul hide-burger-menu burger-menu-dropdown">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Challenges</li></a>
+                    <a href="#"><li>Ranklist</li></a>
+                    <a href="#"><li>TSEC Hacks</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                </ul>
+            </div>
+
+            <div class="right-side">
+                <div class="account">
+                    <img src="./static/img/harsh_kapadia_pic.jpg" alt="HK">
+                    
+                    <div class="dropdown-caret"></div>
+                </div>
+                
+                <div class="dropdown hide">
+                    <div class="user-name">HarshKapadia2</div>
+
+                    <ul>
+                        <a href="#"><li>Your profile</li></a>
+                        <a href="#"><li>Settings</li></a>
+                        <a href="#"><li>Log Out</li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
+            <a class="navbar-brand mr-auto" href="#">
+                <img src="img/codecell-logo.png" alt="" width="40">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="challenges.html" class="nav-link">Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ranklist.html" class="nav-link">Ranklist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">TSEC Hacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="#" class="sign-in glow-button mr-auto">Sign Up</a>
+            </div>
+        </nav>
+        <main>
+            <!-- <div class="left-panell">
+                <div class="account-img">
+                    <img src="./img/harsh_kapadia_pic.jpg" alt="HK">
+                </div>
+
+                <div class="account-details">
+                    <div class="name">Harsh Kapadia</div>
+                    <div class="username">HarshKapadia2</div>
+                    <div class="year-branch">SE IT</div>
+    
+                    <div class="stats">
+                        <div class="points">Points: 40</div>
+                        <div class="solved">Solved: 2/22</div>
+                        <div class="rank">Rank&nbsp; : 200</div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="right-panell">
+                <div class="title">Challenges</div>
+
+                <div class="announcement">
+                    Update: Hint 2 for Week 1 has been posted!
+                </div>
+                <div class="challenges">
+                    <div class="challenge-type">
+                        <div class="all highlight">All</div>
+                        <div class="unsolved">Unsolved/Unattempted</div>
+                        <div class="completed">Solved</div>
+                    </div>
+
+                    <div class="challenges-container-all">
+                        <div class="challenge-type-title">All challenges</div>
+
+                        <div class="week">
+                            <div class="week-info">
+                                <div class="week-number">Week 2</div>
+                                <div class="date-range">08-07-2020 to 14-07-2020</div>
+                            </div>
+
+                            <div class="table-limits">
+                                <table>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Success Rate</th>
+                                        <th>Difficulty</th>
+                                        <th>View</th>
+                                        <th>Editorial</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Number Looper</td>
+                                        <td>30</td>
+                                        <td>30/44</td>
+                                        <td class="easy">Easy</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Space Pattern</td>
+                                        <td>60</td>
+                                        <td>20/40</td>
+                                        <td class="medium">Medium</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Alphabet Pattern</td>
+                                        <td>120</td>
+                                        <td>25/35</td>
+                                        <td class="hard">Hard</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="week">
+                            <div class="week-info">
+                                <div class="week-number">Week 1</div>
+                                <div class="date-range">01-07-2020 to 07-07-2020</div>
+                            </div>
+
+                            <div class="table-limits">
+                                <table>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Success Rate</th>
+                                        <th>Difficulty</th>
+                                        <th>View</th>
+                                        <th>Editorial</th>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Longest increasing subsequence problem</td>
+                                        <td>30</td>
+                                        <td>30/44</td>
+                                        <td class="easy">Easy</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Space Pattern</td>
+                                        <td>60</td>
+                                        <td>20/40</td>
+                                        <td class="medium">Medium</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Alphabet Pattern</td>
+                                        <td>120</td>
+                                        <td>25/35</td>
+                                        <td class="hard">Hard</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+                        
+                    <div class="challenges-container-unsolved hide">
+                        <div class="challenge-type-title">Unsolved/unattempted challenges</div>
+
+                        <div class="week">
+                            <div class="week-info">
+                                <div class="week-number">Week 2</div>
+                                <div class="date-range">08-07-2020 to 14-07-2020</div>
+                            </div>
+
+                            <div class="table-limits">
+                                <table>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Success Rate</th>
+                                        <th>Difficulty</th>
+                                        <th>View</th>
+                                        <th>Editorial</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Number Looper</td>
+                                        <td>Loops</td>
+                                        <td>30/44</td>
+                                        <td class="easy">Easy</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Space Pattern</td>
+                                        <td>Loops</td>
+                                        <td>20/40</td>
+                                        <td class="medium">Medium</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Alphabet Pattern</td>
+                                        <td>Recursion</td>
+                                        <td>25/35</td>
+                                        <td class="hard">Hard</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="week">
+                            <div class="week-info">
+                                <div class="week-number">Week 1</div>
+                                <div class="date-range">01-07-2020 to 07-07-2020</div>
+                            </div>
+
+                            <div class="table-limits">
+                                <table>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Success Rate</th>
+                                        <th>Difficulty</th>
+                                        <th>View</th>
+                                        <th>Editorial</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Alphabet Pattern</td>
+                                        <td>Loops & strings</td>
+                                        <td>25/35</td>
+                                        <td class="medium">Medium</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        
+
+                        
+                    </div>
+
+                    <div class="challenges-container-solved hide">
+                        <div class="challenge-type-title">Solved challenges</div>
+
+                        <div class="week">
+                            <div class="week-info">
+                                <div class="week-number">Week 2</div>
+                                <div class="date-range">08-07-2020 to 14-07-2020</div>
+                            </div>
+
+                            <div class="table-limits">
+                                <table>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Success Rate</th>
+                                        <th>Difficulty</th>
+                                        <th>View</th>
+                                        <th>Editorial</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="week">
+                            <div class="week-info">
+                                <div class="week-number">Week 1</div>
+                                <div class="date-range">01-07-2020 to 07-07-2020</div>
+                            </div>
+
+                            <div class="table-limits">
+                                <table>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Success Rate</th>
+                                        <th>Difficulty</th>
+                                        <th>View</th>
+                                        <th>Editorial</th>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Longest increasing subsequence problem</td>
+                                        <td>Loops & strings</td>
+                                        <td>30/44</td>
+                                        <td class="easy">Easy</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Space Pattern</td>
+                                        <td>Loops</td>
+                                        <td>20/40</td>
+                                        <td class="medium">Medium</td>
+                                        <td><a href="#">Solve</a></td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footerName">
+                    TSEC CodeCell &copy; 2021 All rights reserved.
+                </div>
+                <div class="container mr-auto">
+                    <ion-icon class="social" name="logo-instagram" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                    <ion-icon class="social" name="logo-linkedin" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                    <ion-icon class="social" name="logo-github" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                    <ion-icon class="social" name="logo-facebook" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                    <ion-icon class="social" name="logo-youtube" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
