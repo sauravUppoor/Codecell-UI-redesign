@@ -191,6 +191,11 @@ form {
     width: 45%;
 }
 
+.form-2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .form-3 {
     display: flex;
     flex-wrap: wrap;
@@ -244,6 +249,9 @@ input, textarea{
 }
 
 textarea {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; 
     margin: 20px 0px;
     height: 150px;
     width: 290px;
@@ -804,6 +812,9 @@ footer {
         line-height: 1.5;
         letter-spacing: 1px;
     }
+    textarea {
+        width: 68%;
+    }
     .container-1,
     .container-2 {
         display: inline-block;
@@ -827,6 +838,9 @@ footer {
     }
     .form-1 {
         width: 55%;
+    }
+    .form-2 {
+        width: 100%;
     }
     .profile-container-1 {
         margin: 0 auto;
