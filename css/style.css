@@ -12,7 +12,7 @@ Light Yellow: #fcfe9c
 */
 
 :root {
-    --background: #16151a;
+    --background: #000;
     --white-text: #bcbfc8;
     --white-hover: #f6f8f7;
     --grey-borders: #bcbfc821;
@@ -60,9 +60,14 @@ a:hover {
     display: none;
 }
 
+.nav-flex {
+    display: flex;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
   
 /* Track */
@@ -88,7 +93,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     backdrop-filter: blur(5px) !important;
-    background-color: rgba(22, 21, 26, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 66px;
     z-index: 1020;
 }
@@ -118,6 +123,7 @@ nav {
     font-weight: 500;
     border-radius: 5px;
 }
+
 
 
 /* Buttons */
@@ -229,10 +235,18 @@ input, textarea{
     outline: none;
     color: #f6f8f7;
     font-size: 17px;
+    
 }  
+
+.input[type="text"],
+.textarea, select {
+    border-bottom: 1px solid var(--white-text);
+}
 
 textarea {
     margin: 20px 0px;
+    height: 150px;
+    width: 290px;
 }
 
 .custom-select {
@@ -735,16 +749,49 @@ footer {
 }
 
 /* Media Query */
-@media (max-width: 767px) {
+@media (max-width: 1020px) {
     .content-container {
         padding-top: 10px;
     }
+    .navbar-brand {
+        display: none;
+    }
+    .navbar-header {
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .navbar-brand {
+        order:1;
+        margin: 0 auto !important;
+        position: fixed;
+        left: 45%;
+    }
+    .navbar-toggle {
+        order:0;
+        margin-left:15px;
+        margin-right:0;
+    }
+    .right-side {
+        order: 2;
+    }
+    .nav-login {
+        order: 2;
+        position: fixed;
+        left: 80%;
+    }
+    .nav {
+        background-color: var(--background);
+        backdrop-filter: none !important;
+    }
     .navbar-collapse
     {
-        background-color: rgba(22, 21, 26, 0.9);
+        background-color: var(--background);
         text-align: center;
         padding: 10px;
         width: 100%;
+    }
+    .nav-link {
+        font-size: 20px;
     }
     .sample-img {
         display: none;
@@ -809,6 +856,9 @@ footer {
     .problem-heading {
         margin: 10px;
         text-align: center;
+    }
+    form {
+        width: 80%;
     }
 }
 

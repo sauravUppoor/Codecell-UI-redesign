@@ -4,20 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="shortcut icon" href="img/codecell-logo.png">
     <link href='https://css.gg/code-slash.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+
+    <link rel="shortcut icon" href="./img/codecell_logo.svg" type="image/x-icon" sizes="any">
+
+
+    <script defer src="./js/account_dropdown.js"></script>
+    <script defer src="./js/burger_menu_dropdown.js"></script>
 
     <title>TSEC CodeCell</title>
 </head>
 
 <body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
+    <nav id="nav" class="desktop navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
         <a class="navbar-brand mr-auto" href="#">
             <img src="img/codecell-logo.png" alt="" width="40">
         </a>
@@ -36,7 +49,7 @@
                     <a href="#" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Challenges</a>
+                    <a href="challenges.html" class="nav-link">Challenges</a>
                 </li>
                 <li class="nav-item">
                     <a href="ranklist.html" class="nav-link">Ranklist</a>
@@ -48,8 +61,30 @@
                     <a href="#" class="nav-link">Contact Us</a>
                 </li>
             </ul>
-            <a href="#" class="sign-in glow-button mr-auto">Sign Up</a>
+            
         </div>
+
+        <!-- If user logged in this div -->
+        <div class="right-side">
+            <div class="account">
+                <img src="./img/defa.jpg" alt="HK">
+                
+                <div class="dropdown-caret"></div>
+            </div>
+            
+            <div class="dropdown hide">
+                <div class="user-name">Username</div>
+
+                <ul>
+                    <a href="#"><li>Your profile</li></a>
+                    <a href="#"><li>Settings</li></a>
+                    <a href="#"><li>Log Out</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Else -->
+        <!-- <a href="#" class="sign-in glow-button mr-auto nav-login">Login</a> -->
     </nav>
 
     <main>
@@ -58,7 +93,7 @@
                 <span>TSEC Ranklist</span>
             </div>
             <div id="table" class="ranklist-table">
-    
+
                 <!-- Insert Rankings here -->
                 <div class="rank-container">
                     <div class="rank-box-1">
@@ -98,7 +133,7 @@
                     </div>
                     <div class="rank-box-1">2166<span class="pts">pts</span></div>
                 </div>
-    
+
                 <div class="rank-container">
                     <div class="rank-box-1">
                         <span>3</span>
@@ -118,7 +153,7 @@
                     </div>
                     <div class="rank-box-1">2070<span class="pts">pts</span></div>
                 </div>
-    
+
                 <div class="rank-container you">
                     <div class="rank-box-1">
                         <span>4</span>
@@ -138,7 +173,7 @@
                     </div>
                     <div class="rank-box-1">1692<span class="pts">pts</span></div>
                 </div>
-    
+
                 <div class="rank-container">
                     <div class="rank-box-1">
                         <span>5</span>
@@ -158,7 +193,7 @@
                     </div>
                     <div class="rank-box-1">1502<span class="pts">pts</span></div>
                 </div>
-    
+
                 <div class="rank-container">
                     <div class="rank-box-1">
                         <span>6</span>
@@ -178,7 +213,7 @@
                     </div>
                     <div class="rank-box-1">1190<span class="pts">pts</span></div>
                 </div>
-    
+
                 <div class="rank-container">
                     <div class="rank-box-1">
                         <span>7</span>
@@ -198,7 +233,7 @@
                     </div>
                     <div class="rank-box-1">1170<span class="pts">pts</span></div>
                 </div>
-    
+
                 <div class="rank-container">
                     <div class="rank-box-1">
                         <span>8</span>
@@ -218,7 +253,7 @@
                     </div>
                     <div class="rank-box-1">1062<span class="pts">pts</span></div>
                 </div>
-    
+
                 <div class="rank-container">
                     <div class="rank-box-1">
                         <span>9</span>
@@ -238,7 +273,7 @@
                     </div>
                     <div class="rank-box-1">1010<span class="pts">pts</span></div>
                 </div>
-    
+
                 <div class="rank-container">
                     <div class="rank-box-1">
                         <span>10</span>
@@ -258,11 +293,11 @@
                     </div>
                     <div class="rank-box-1">990<span class="pts">pts</span></div>
                 </div>
-    
+
             </div>
         </div>
     </main>
-    
+
 
     <footer>
         <div class="footer">

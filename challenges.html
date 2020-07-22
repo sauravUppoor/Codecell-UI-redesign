@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="codecell, tsec, challenges, competitive coding, cc, competitive programming, cp, weekly challenges, wc, harsh kapadia, html, css, js, vanilla css">
-        <meta name="description" content="A static competitive coding weekly challenges page for TSEC CodeCell by Harsh Kapadia">
         
         <link rel="shortcut icon" href="img/codecell-logo.png">
         <link href='https://css.gg/code-slash.css' rel='stylesheet'>
@@ -15,7 +13,7 @@
         
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="./css/base.css">
-        <!-- <link rel="stylesheet" href="./css/navbar.css"> -->
+        <link rel="stylesheet" href="./css/navbar.css">
         <link rel="stylesheet" href="./css/main.css">
         
         
@@ -30,48 +28,8 @@
     </head>
 
     <body>
-        <!-- <nav class="navbar">
-            <div class="left-side">
-                <div class="burger-menu">
-                    <div class="line-1"></div>
-                    <div class="line-2"></div>
-                    <div class="line-3"></div>
-                </div>
 
-                <div class="logo">
-                    <a href="#"><img src="./static/img/codecell_logo.svg" alt="TSEC CodeCell"></a>
-                </div>
-    
-                <ul class="navbar-main-ul hide-burger-menu burger-menu-dropdown">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Challenges</li></a>
-                    <a href="#"><li>Ranklist</li></a>
-                    <a href="#"><li>TSEC Hacks</li></a>
-                    <a href="#"><li>Contact Us</li></a>
-                </ul>
-            </div>
-
-            <div class="right-side">
-                <div class="account">
-                    <img src="./static/img/harsh_kapadia_pic.jpg" alt="HK">
-                    
-                    <div class="dropdown-caret"></div>
-                </div>
-                
-                <div class="dropdown hide">
-                    <div class="user-name">HarshKapadia2</div>
-
-                    <ul>
-                        <a href="#"><li>Your profile</li></a>
-                        <a href="#"><li>Settings</li></a>
-                        <a href="#"><li>Log Out</li></a>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
-
-        <nav id="nav" class="navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
+        <nav id="nav" class="desktop navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
             <a class="navbar-brand mr-auto" href="#">
                 <img src="img/codecell-logo.png" alt="" width="40">
             </a>
@@ -102,28 +60,32 @@
                         <a href="#" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
-                <a href="#" class="sign-in glow-button mr-auto">Sign Up</a>
+                
             </div>
+
+            <!-- If user logged in this div -->
+            <div class="right-side">
+                <div class="account">
+                    <img src="./img/defa.jpg" alt="HK">
+                    
+                    <div class="dropdown-caret"></div>
+                </div>
+                
+                <div class="dropdown hide">
+                    <div class="user-name">Username</div>
+
+                    <ul>
+                        <a href="#"><li>Your profile</li></a>
+                        <a href="#"><li>Settings</li></a>
+                        <a href="#"><li>Log Out</li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Else -->
+            <!-- <a href="#" class="sign-in glow-button mr-auto nav-login">Login</a> -->
         </nav>
         <main>
-            <!-- <div class="left-panell">
-                <div class="account-img">
-                    <img src="./img/harsh_kapadia_pic.jpg" alt="HK">
-                </div>
-
-                <div class="account-details">
-                    <div class="name">Harsh Kapadia</div>
-                    <div class="username">HarshKapadia2</div>
-                    <div class="year-branch">SE IT</div>
-    
-                    <div class="stats">
-                        <div class="points">Points: 40</div>
-                        <div class="solved">Solved: 2/22</div>
-                        <div class="rank">Rank&nbsp; : 200</div>
-                    </div>
-                </div>
-            </div> -->
-
             <div class="right-panell">
                 <div class="title">Challenges</div>
 
@@ -429,7 +391,7 @@
                 </div>
             </div>
         </footer>
-
+        <script src="js/index.js"></script>
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

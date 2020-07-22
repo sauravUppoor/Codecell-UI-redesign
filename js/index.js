@@ -12,6 +12,18 @@ window.onscroll = () => {
     }
 };
 
+// const device_width = window.screen.width;
+// console.log(device_width);
+
+// if(device_width <= "767px") {
+//     document.getElementById("mobile").classList.add("nav-flex");
+//     document.getElementById("nav").classList.add("hidden");
+// }
+// else {
+//     document.getElementById("mobile").classList.add("hidden");
+//     document.getElementById("nav").classList.add("nav-flex");
+// }
+
 /* Profile Animation */
 
 var goToEdit = document.getElementById("edit-profile");
@@ -44,7 +56,9 @@ setW = (item) => {
 
 array.forEach(setW);
 
-/* Editor */
+/* Navbar */
+
+
 
 
 
