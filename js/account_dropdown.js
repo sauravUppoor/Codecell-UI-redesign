@@ -7,7 +7,6 @@ account.addEventListener
     (event) =>
     {
         dropdown.classList.toggle("hide");
-        console.log("Click");
         event.stopPropagation();
     }
 );
