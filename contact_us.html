@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+		<link rel="stylesheet" href="./css/contact_us_main.css">
+        
+        <script defer src="./js/account_dropdown.js"></script>
+
+        <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script defer type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+		<script defer nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+
+        <link rel="shortcut icon" href="./img/codecell_logo.svg" type="image/x-icon" sizes="any">
+
+        <title>TSEC CodeCell</title>
+    </head>
+
+    <body>
+        <nav id="nav" class="desktop navbar navbar-expand-lg navbar-dark .bg-transparent sticky-top">
+            <a class="navbar-brand mr-auto" href="#">
+                <img src="img/codecell-logo.png" alt="" width="40">
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="challenges.html" class="nav-link">Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ranklist.html" class="nav-link">Ranklist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">TSEC Hacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- If user logged in this div -->
+            <div class="right-side">
+                <div class="account">
+                    <img src="./img/defa.jpg" alt="HK">
+                    
+                    <div class="dropdown-caret"></div>
+                </div>
+                
+                <div class="dropdown hide">
+                    <div class="user-name">Username</div>
+
+                    <ul>
+                        <a href="#"><li>Your profile</li></a>
+                        <a href="#"><li>Settings</li></a>
+                        <a href="#"><li>Log Out</li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Else -->
+            <!-- <a href="#" class="sign-in glow-button mr-auto nav-login">Login</a> -->
+        </nav>
+
+        <main>
+            <div class="title">Contact us</div>
+            <div class="title-info">We'll get back to you soon!</div>
+
+            <form action="" method="" class="form">
+                <div class="input-group">
+                    <input type="text" name="first_name" id="first-name" placeholder="First name">
+                    <label for="first-name">First name</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+                    <label for="last-name">Last name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
+                    <label for="e-mail">e-mail</label>
+                </div>
+
+                <div class="textarea-group">
+                    <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <div class="button-div">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footerName">
+                    TSEC CodeCell &copy; 2021 All rights reserved.
+                </div>
+                <div class="container mr-auto">
+                    <ion-icon class="social" name="logo-instagram" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                    <ion-icon class="social" name="logo-linkedin" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                    <ion-icon class="social" name="logo-github" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                    <ion-icon class="social" name="logo-facebook" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                    <ion-icon class="social" name="logo-youtube" size="large">
+                        <a href="#"></a>
+                    </ion-icon>
+                </div>
+            </div>
+		</footer>
+    </body>
+</html>
