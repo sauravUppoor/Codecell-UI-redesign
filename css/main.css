@@ -194,17 +194,17 @@ td
 }
 
 .easy {
-    color: greenyellow;
+    color: #b2ff59;
     font-weight: bold;
 }
 
 .medium {
-    color: orange;
+    color: #ffab40;
     font-weight: bold;
 }
 
 .hard {
-    color: red;
+    color: #ff5252;
     font-weight: bold;
 }
 /* Media queries */
@@ -323,11 +323,6 @@ td
     .date-range
     {
         font-size: 10px;
-    }
-
-    .table {
-        border-collapse: separate;
-        border-spacing: 20px 0;
     }
 
     .table-limits
