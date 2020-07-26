@@ -1,0 +1,66 @@
+.glow-but {
+    transform: scale(1);
+    transition: transform 900ms;
+}
+
+.glow-but:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #00ad8a;
+    transform: scale(1.03);
+}
+
+.glow-butt {
+    transform: scale(1);
+    transition: transform 900ms;
+}
+
+.glow-butt:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #00ad8a;
+    transform: scale(1.03);
+}
+
+.primary {
+  color: #f6f8f7;
+  font-weight: 700; 
+  font-size: 1.56rem;
+  line-height: 1.3;
+  letter-spacing: 0.8px; 
+}
+
+p a {
+  font-family: sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;  
+}
+
+.secondary {
+    color: #bcbfc8;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+.grid-primary1 {
+    color: #f6f8f7;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+}
+
+.grid-secondary1 {
+    color: #bcbfc8;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+.cache {
+
+    border-radius: 15px;
+}
