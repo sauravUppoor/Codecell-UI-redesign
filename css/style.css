@@ -26,7 +26,6 @@ Light Yellow: #fcfe9c
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    transition: 0.2s ease-in;
 }
 
 body {
@@ -288,7 +287,8 @@ button:focus {
 
 /* ICONS */
 ion-icon {
-    color: #fcfe9c;
+    /* color: #fcfe9c;
+    */
     margin: 10px 0px;
 }
 /* CONTENT */
@@ -420,6 +420,57 @@ ion-icon {
     padding: 30px;
     background-color: #1c1d1f;
     letter-spacing: 1px;
+    display: block;
+    top: 0px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+    margin-top: -10px;
+    margin-right: -10px;
+    color: var(--white-hover);
+    font-weight: 300;
+    display: none;
+}
+
+
+
+.grid-element:hover {
+    border: 1px solid var(--light-green);
+    cursor: pointer;
+}
+
+.grid-element:hover .go-corner,
+.grid-element:hover .go-arrow {
+    display: inline;
+    color: var(--white-hover);
+    font-weight: 500;
+}
+
+.grid-element:hover .go-corner {
+    background-color: var(--light-green);
+}
+
+.grid-element:hover ion-icon {
+    color: var(--light-green);
+}
+
+.grid-element:hover .grid-secondary {
+    color: #fff;
 }
 
 .grid-primary {
@@ -467,6 +518,7 @@ footer {
 .social {
     margin: 10px;
     cursor: pointer;
+    color: var(--light-yellow);
 }
 
 .social:active {
