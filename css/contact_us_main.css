@@ -76,7 +76,7 @@ textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
     font-size: 15px;
 }
 
-.button-div
+.button-3
 {
     display: flex;
     justify-content: center;
@@ -84,8 +84,7 @@ textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label
 
 button
 {
-    padding: 2%;
-    width: 50%;
+    padding: 30px;
     border: 1px solid;
     border-color: #212121;
     border-radius: 5px;
