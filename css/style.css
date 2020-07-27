@@ -43,6 +43,7 @@ a {
     font-size: 14px;
     letter-spacing: 1px;
     font-weight: 400;
+    color: var(--white-hover);
 }
 
 img {
@@ -831,9 +832,9 @@ footer {
 
 @media (max-width: 1200px) {
 
-    .navbar-brand {
+    /* .navbar-brand {
         display: none;
-    }
+    } */
     .navbar-header {
         display:flex;
         justify-content: space-between;
@@ -855,7 +856,7 @@ footer {
     .nav-login {
         order: 2;
         position: fixed;
-        left: 80%;
+        right: 10%;
     }
     .nav {
         background-color: var(--background);
@@ -883,12 +884,11 @@ footer {
         display: none;
     }
     .primary-description {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     p {
-        font-size: 20px;
-        line-height: 1.5;
-        letter-spacing: 1px;
+        font-size: 1.5rem;
+        line-height: 1.2;
     }
     textarea {
         width: 68%;
@@ -900,9 +900,10 @@ footer {
         padding: 0px 5px;
     }
     .button-1,
-    .button-2 {
+    .button-2,
+    .glow-button {
         display: block;
-        height: 42px;
+        padding: 10px 20px;
     }
     .grid {
         display: block;

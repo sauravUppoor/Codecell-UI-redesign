@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    
+    <link rel="stylesheet" type="text/css" href="css/about.css">
     
     <link rel="shortcut icon" href="./img/codecell_logo.svg" type="image/x-icon" sizes="any">
     
@@ -30,7 +30,53 @@
 
     </style>
 
+
     <title>TSEC CodeCell</title>
+    <style type="text/css">
+        a {
+            color: var(--light-yellow);
+        }
+        a:hover {
+            color: var(--light-green);
+        }
+        ul {
+            list-style-type: none;
+        }
+        .card {
+            width: 100%;
+            padding: 4px;
+            border: 0.1px solid rgba(0,0,0,.125);
+            margin: 1px 1px;
+        }
+
+        .card-body {
+            padding: 1.00rem;
+        }
+
+        p {
+            line-height: 28px; 
+        }
+        
+    @media only screen and (max-width: 767px) { 
+        .primary {
+        font-weight: 900 !important;
+        }
+
+        .secondary {
+            font-weight: 600 !important;
+        }
+
+        .grid-secondary1 {
+            font-weight: 500 !important;
+        }
+
+        .grid-primary1 {
+            font-weight: 600 !important;
+        }
+    }   
+        
+    
+    </style>
 </head>
 
 <body>
@@ -69,7 +115,7 @@
         </div>
 
         <!-- If user logged in this div -->
-        <!-- <div class="right-side">
+        <div class="right-side">
             <div class="account">
                 <img src="./img/defa.jpg" alt="HK">
                 
@@ -85,10 +131,10 @@
                     <a href="#"><li>Log Out</li></a>
                 </ul>
             </div>
-        </div> -->
+        </div>
 
         <!-- Else -->
-        <a href="#" class="sign-in glow-button mr-auto nav-login">Login</a>
+        <!-- <a href="#" class="sign-in glow-button mr-auto nav-login">Login</a> -->
     </nav>
 
     <main>
@@ -105,7 +151,7 @@
             <div class="container">
                 <form class="form-1">
                     <input type="email" placeholder="> Never miss an update!">
-                    <button id="button-1 glow-button">Join our mailing list</button>
+                    <button id="button-1 glow-button">Join mailing list</button>
                 </form>
             </div>
     
@@ -156,7 +202,7 @@
                     <a href="http://www.tseccodecell.com/hackathon/">
                         <ion-icon name="code-working-outline" size="large"></ion-icon>
                         <div class="grid-primary">TSEC Hacks</div>
-                        <div class="grid-secondary">Sparking creation of next generation technology.</div>
+                        <div class="grid-secondary">Sparking creation of next generation technology</div>
                         <div class="go-corner" href="#">
                             <div class="go-arrow">
                                 →
@@ -168,7 +214,7 @@
                     <a href="#">
                         <ion-icon name="trophy-outline" size="large"></ion-icon>
                         <div class="grid-primary">Events</div>
-                        <div class="grid-secondary">Fun technical events to promote  </div>
+                        <div class="grid-secondary">Fun technical events for everyone to showcase their skill sets</div>
                         <div class="go-corner" href="#">
                             <div class="go-arrow">
                                 →
@@ -180,7 +226,7 @@
                     <a href="">
                         <ion-icon name="laptop-outline" size="large"></ion-icon>
                         <div class="grid-primary">Workshops</div>
-                        <div class="grid-secondary">Where it all began!</div>
+                        <div class="grid-secondary">Learn new skills beyond textbooks and academic syllabus</div>
                         <div class="go-corner" href="#">
                             <div class="go-arrow">
                                 →
@@ -197,7 +243,7 @@
                     <span>Make it Social</span>
                 </div>
                 <div class="secondary-description">
-                    <span>Follow us on Instagram for weekly newsletter, facts and latest updates</span>
+                    <p>Follow us on Instagram for weekly newsletter, facts and latest updates</p>
                 </div>
             </div>
             <br>
