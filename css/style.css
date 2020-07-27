@@ -31,6 +31,7 @@ Light Yellow: #fcfe9c
 body {
     background-color: var(--background) !important;
     font-family: 'Roboto', sans-serif !important;
+    margin: 0 auto;
 }
 
 main {
@@ -306,7 +307,6 @@ ion-icon {
     width: 100%;
     margin: 0px auto;
     padding: 70px 0px;
-    max-width: 1024px;
 }
 /* ------------------------------------ */
 
@@ -316,6 +316,7 @@ ion-icon {
     justify-content: center;
     text-align: center;
     width: 80%;
+    max-width: 1024px;
     margin: 0 auto;
 }
 
@@ -409,7 +410,7 @@ ion-icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     border-radius: 6px;
 }
@@ -452,6 +453,7 @@ ion-icon {
 .grid-element:hover {
     border: 1px solid var(--light-green);
     cursor: pointer;
+    padding: 29px;
 }
 
 .grid-element:hover .go-corner,
@@ -486,6 +488,23 @@ ion-icon {
     font-size: 15px;
     font-weight: 300;
     margin-top: 12px;
+}
+
+/* Instagram Grids */
+
+.image-gallery {
+    line-height: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 300px;
+    padding: 5px;
+}
+
+.item {
+    margin: 5px;
+    width: 300px;
+    height: 300px;
 }
 
 /* CONTACT US */
@@ -809,16 +828,15 @@ footer {
 }
 
 /* Media Query */
-@media (max-width: 1020px) {
-    .content-container {
-        padding-top: 10px;
-    }
+
+@media (max-width: 1200px) {
+
     .navbar-brand {
         display: none;
     }
     .navbar-header {
         display:flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .navbar-brand {
         order:1;
@@ -853,6 +871,14 @@ footer {
     .nav-link {
         font-size: 20px;
     }
+}
+
+@media (max-width: 767px) {
+    .content-container {
+        padding-top: 10px;
+        width: 100%;
+    }
+    
     .sample-img {
         display: none;
     }
@@ -883,10 +909,11 @@ footer {
         justify-content: center;
     }
     .grid-element {
-        width: 80%;
+        width: 50%;
+        min-width: 300px;
         margin: 5px auto;
-        height: 180px;
-        padding: 10px;
+        padding: 20px;
+        padding-bottom: 40px;
     }
     .form-1 {
         width: 55%;
