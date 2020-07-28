@@ -111,7 +111,7 @@ nav {
 }
 
 .nav-link {
-    font-size: 15px;
+    font-size: 1.18rem;
     letter-spacing: 0.5px;
     text-decoration: none;
     font-weight: 400;
@@ -752,15 +752,17 @@ footer {
 /* Problems Page */
 
 .problem {
+    width: 80%;
     background-color: var(--dark-cards);
     border-radius: 6px;
     padding: 30px;
-    margin: 5px 10px;
+    margin: 5px auto;
 }
 
 .problem-info {
     margin: 20px auto;
     width: 30%;
+    max-width: 300px;
     align-items: center;
     border: 0.5px solid var(--light-yellow);
     padding: 15px;
@@ -774,11 +776,7 @@ footer {
     letter-spacing: 1.2px;
 }
 
-.problem-heading {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
-}
+
 
 .statment {
     font-size: 19px;
@@ -792,8 +790,11 @@ footer {
 
 .problem-heading {
     color: var(--light-yellow);
-    margin: 10px;
     font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin: 10px auto;
+    width: 80%;
 }
 
 .problem-verdict {
@@ -872,6 +873,19 @@ footer {
     .nav-link {
         font-size: 20px;
     }
+    .problem {
+        margin: 5px 30px;
+    }
+    .problem-info {
+        width: 300px;
+    }
+    .problem-heading {
+        margin: 10px;
+        text-align: center;
+    }
+    .problem-score {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -884,7 +898,7 @@ footer {
         display: none;
     }
     .primary-description {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     p {
         font-size: 1.5rem;
@@ -903,7 +917,7 @@ footer {
     .button-2,
     .glow-button {
         display: block;
-        padding: 10px 20px;
+        padding: 5px 20px;
     }
     .grid {
         display: block;
@@ -950,6 +964,9 @@ footer {
     .problem-heading {
         margin: 10px;
         text-align: center;
+    }
+    .problem-score {
+        font-size: 1.5rem;
     }
     form {
         width: 80%;
