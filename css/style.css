@@ -125,7 +125,11 @@ nav {
     border-radius: 5px;
 }
 
-
+.nav-login {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
 
 /* Buttons */
 
